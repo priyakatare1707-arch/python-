@@ -262,7 +262,28 @@
 #         if is_prime:
 #             print(num, end=" ")
 #-----------------------------------------pelemdrom----------------------------------------------
+# n=input('enter value')
+# if n==n[::-1]:
+#   print(pelindrom)
+# else:
+#     print(not pelindrom)
+#------------------------------reverse without slice---------------------------------------------------
+# s='python'
+# s1=''
+# for i in s:
+#   s1= i+s1 
+#print(s1)
+#------------------------factor--------------------------------------------------------------
 # n=int(input('enter value'))
+# i,l=2,[]
+# while i<n:
+#     if n%i==0:
+#         l.append(i)
+#     i=i+1
+# print(l)
+ 
+
+
 # temp=n
 # rev=0
 # while n!=0:
@@ -407,6 +428,60 @@
 #   *  
 
 
+# n = int(input("Enter number of rows: "))
+# for i in range(1, n+1):
+#     # print spaces first, then stars
+#     print('  ' * (n - i) + '* ' * i)
+#     # Decreasing stars, right-aligneb
+# for i in range(n-1, 0, -1):
+#     print('  ' * (n - i) + '* ' * i)
+#        * 
+#      * *
+#    * * *
+#  * * * *
+#* * * * *
+#  * * * *
+#    * * *
+#      * *
+#        *
+# n=int(input ('enter row'))
+# for i in range(n):
+#     print('* '*(n-i))
+# # n=int(input ('enter row'))
+# for i in range(1,n+1):
+#     print('* '*i)
+#     * * * * *
+#     * * * *
+#     * * *
+#     * *
+#     *
+#     * *
+#     * * *
+#     * * * *
+#     * * * * *
+# n = int(input("Enter number of rows: "))
+# # Decreasing stars, right-aligned
+# for i in range(n, 0, -1):
+#     print('  ' * (n - i) + '* ' * i)
+# # Increasing stars, right-aligned
+# for i in range(2, n + 1):
+#     print('  ' * (n - i) + '* ' * i)
+#* * * * * 
+#  * * * *
+#    * * *
+#      * *
+#        *
+#      * *
+#    * * *
+#  * * * *
+#* * * * *
+# n=int(input('enter a num'))
+# for i in range(n):
+#     for j in ( i,n):
+#         print('',end=' ')
+#     for j in range(i+1):
+#         print('* ',end=' ')
+#     print()
 
 # n=int(input('enter a value'))
 # for i in range(n):#----------------i how much time it run--------------------
@@ -422,7 +497,7 @@
 # n=int(input('enter a value'))
 # for i in range(1,n+1):
 #     for j in range(1,i+1):
-#         print(j,end='')
+#         print(j,end=' ')
 #     print()
 
 #1
@@ -453,7 +528,60 @@
 #13
 #135
 #13579
-       
+
+
+# n = 4   # number of rows
+# num = 1
+
+# for i in range(1, n+1):
+#     for j in range(i):
+#         print(num, end=" ")
+#         num += 1
+#     print()
+# 1
+# 2 3
+# 4 5 6
+# 7 8 9 10
+
+# n = 4   # number of rows
+# num = 1
+
+# for i in range(1, n+1):
+#     for j in range(i):    # j number of column
+#         print(num*2, end=" ")
+#         num += 1
+#     print()  
+#2 
+#4 6
+#8 10 12
+#14 16 18 20
+
+# n = 4
+# num = 1
+# for i in range(1, n+1):
+#     print(" "*(n-i), end="")   # left spaces
+#     for j in range(i):
+#         print(num, end=" ")
+#         num += 1
+#     print()
+#         1
+#        1  2
+#       1  2  3
+#      1  2  3  4
+#     1  2  3  4  5
+
+# n = 4
+# num = 1
+# for i in range(1, n+1):
+#     print(" "*(n-i), end="")   # left spaces
+#     for j in range(i):
+#         print(num*2, end=" ")
+#         num += 1
+#     print()
+#      2 
+#     4 6
+#   8 10 12
+# 14 16 18 20
 # x='A'
 # print(ord(x)+1)
 # print(chr(ord(x)+1))
@@ -486,9 +614,107 @@
 # #e e e e e
 
 # n=int(input('enter a char'))
-# ch='a'
-# for i in range(n):
-#     for j in range(n):
+#    ch='a' 
+# for i in range(1,n+1):
+   
+#     for j in range(i):
 #         print(ch,end=' ')
 #     ch=chr(ord(ch)+1)
 #     print()  
+
+#a 
+#b b
+#c c c
+#d d d d
+#e e e e e
+# n = int(input("enter a number: "))
+
+# for i in range(1, n+1):
+#     ch = 'A'           # start from A every row
+    
+#     for j in range(i):
+#         print(ch, end=' ')
+#         ch = chr(ord(ch) + 1)
+#     print()
+# #A 
+# #A B
+# #A B C
+# #A B C D
+# #A B C D E
+
+# n = int(input("enter a number: "))
+
+# for i in range(1, n+1):
+#     ch = 'A'           # start from A every row
+    
+#     for j in range(i):
+#         print(ch, end=' ')
+#         ch = chr(ord(ch) + 2)
+#     print()
+#A 
+#A C
+#A C E
+#A C E G
+#A C E G I
+# n = int(input("enter a number: "))
+# num='a'
+# for i in range(1, n+1):
+    
+#     for j in range(i):
+#         print(num, end=' ')
+#         num=chr(ord(num)+1)
+       
+#     print()
+
+#a 
+#b c
+#d e f
+#g h i j
+#k l m n o
+# n = int(input("enter a number: "))
+# num='a'
+# for i in range(1, n+1):
+#     print(" "*(n-i), end="")
+#     for j in range(i):
+#         print(num, end=' ')
+#         num=chr(ord(num)+1)
+       
+#     print()
+#    a 
+#   b c
+#  d e f
+# g h i j
+#k l m n o
+
+# n = int(input("enter a number: "))
+
+# for i in range(1, n+1):
+#     ch = 'A'           # start from A every row
+#     print(" "*(n-i), end="")
+#     for j in range(i):
+#         print(ch, end=' ')
+#         ch = chr(ord(ch) + 1)
+#     print()
+#      A 
+#     A B
+#    A B C
+#   A B C D
+#  A B C D E
+# n=5
+# i=1
+# while i<=n:
+#     j=1
+#     ch='a'
+#     while j<=n:
+
+#        print(ch,end='')
+#        ch=chr(ord(ch)+1)
+#        j=j+1
+#     i=i+1
+#     print( )
+
+#  a a a a a 
+# #b b b b b
+# #c c c c c
+# #d d d d d
+# #e e e e e
