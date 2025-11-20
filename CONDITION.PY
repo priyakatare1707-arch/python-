@@ -699,14 +699,47 @@
 #     A B
 #    A B C
 #   A B C D
-#  A B C D E
+#  A B C D 
+
+# n=5
+# i=1
+# while i<=n:
+#     j=1
+#     ch='a'
+#     while j<=i:
+#        print(ch,end='')
+#        ch=chr(ord(ch)+1)
+#        j=j+1
+#     i=i+1
+#     print( )
+# a
+# ab
+# abc
+# abcd
+# abcde
+
+# n=5
+# i=1
+# p='a'
+# while i<=n:
+#     j=1    
+#     while j<=i:       
+#        print(p,end='')
+#        p=chr(ord(p)+1)
+#        j=j+1     
+#     i=i+1
+#     print( )
+# a
+# bc
+# def
+# ghij
+# klmno
 # n=5
 # i=1
 # while i<=n:
 #     j=1
 #     ch='a'
 #     while j<=n:
-
 #        print(ch,end='')
 #        ch=chr(ord(ch)+1)
 #        j=j+1
@@ -718,3 +751,84 @@
 # #c c c c c
 # #d d d d d
 # #e e e e e
+# n=int(input('enter a num'))
+# for _ in range(1,n+1):
+#     for i in range(1,n+1):
+#         print(i,end=' ')
+#     print()
+
+# n=int(input('enter a num'))
+# for _ in range(1,n+1):
+#     for i in range(1,_+1):
+#         print(i,end=' ')
+#     print()
+#--------------------------------even num triangle------------------------------------
+# n=int(input('enter a num'))
+# for _ in range(1,n+1):
+#     for i in range(1,_+1):
+#         print(i*2,end=' ')
+#     print()
+#--------------------------------odd num triangle------------------------------------
+# n=int(input('enter a num'))
+# for _ in range(1,n+1):
+#     for i in range(1,_+1):
+#         print(i*2-1,end=' ')
+#     print()
+
+# n=int(input('enter a num'))
+# y=1
+# for i in range(1,n+1):
+#    print(' '*(n-i),end=' ')
+#    for i in range(1,i+1):
+#         print(y,end=' ')
+#         y+=1
+#    print()
+#-------------------------------------transfer statment-----------------------------------------
+# n=int(input('enter a num'))
+# i=1
+# while i<n:
+#     if i==5:
+#         print('hellow')
+#         i +=1
+#         continue#--------------skip before itaretion for current stetment(it skip only continue statment amd continue for more)
+#     else:
+#         print(i)
+#     i+=1
+
+# n=int(input('enter a num'))# it make infinit loop because it does not increase (i+=1)so the condition when setisfy  it skip the below step and because of no inc. of num it start with five again it not change start with five)
+# i=1
+# while i<=n:
+#     if i==5:
+       
+#        continue
+#     else:
+#         print(i)
+        # i+=1
+
+# n=int(input('enter a num'))
+# i=1
+# while i<=n:
+#     if i==5:
+#        print('okk')
+#        break#-------------------after break teminet loop no execution after that---------
+#     else:
+#         print(i)
+#     i +=1
+#-------------------------------------------indentetion error space se ati hai ---------------------------------------------
+#------------------------------------------------pass-----------------------------------------------------------------------------
+# print('hellow')
+# x=10
+# if x%2==0:
+#     pass
+# print()  
+
+# n=int(input('enter a num'))
+# i=1
+# while i<n:
+#     if i==5:
+#         pass# it not give error pass it and  not print
+#     else:
+#         print(i)
+#     i+=1
+
+#----------------------function (remove the reapetation of loop)----------------------------------------------
