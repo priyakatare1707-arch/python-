@@ -281,7 +281,26 @@
 #         l.append(i)
 #     i=i+1
 # print(l)
- 
+#--------------------------------------factorial--------------------------------------------------------
+# n=int(input('enter value'))#horizontal
+# mul=1
+# for i in range(1,n+1):
+#       mul*=i
+#       if i<n:
+#           print(i,end='*')
+#       else:
+#             print(i,end='=')
+# print(mul)
+
+# n=int(input('enter value'))
+# temp=n
+# sum=0
+# while temp>0:
+#       digit=temp%10
+#       sum+=digit
+#       temp=temp//10
+# print(sum)
+
 
 
 # temp=n
@@ -325,464 +344,7 @@
 # print("total digit",td)
 #---------------------------------for loop is use for collection of caractor---------------------------
 
-#------------------------------pattarn-----------------------------------------------
-# n=5         
-# for i in range(1,6):
-#  print('* '*i)
-#* 
-#* *
-#* * *
-#* * * *
-#* * * * *
-# n=int(input ('enter row'))  
-# for i in range(1,n+1):
-#     print(' '*(n-i)+'*'*i)
-#     *
-#    **
-#   ***
-#  ****
-# n=int(input ('enter row'))  
-# for i in range(1,n+1):
-#     print(' '*(n-i)+'* '*i)
 
-#    * 
-#   * *
-#  * * *
-# * * * *
-#* * * * *
-# n=int(input ('enter row'))
-# for i in range(1,n+1):
-#     print('*'*i)
-#    *
-#    **
-#    ***
-#    ****
-#    *****
-# n=int(input ('enter row'))
-# for i in range(n):
-#     print(''*i+'*'*(n-i))
-
-# *****
-# ****
-# ***
-# **
-# *
-# n=int(input ('enter row'))
-# for i in range(n):
-#     print('*'*(n-i))
-# * * * * * 
-# * * * *
-# * * *
-# * *
-# *
-# n=int(input ('enter row'))
-# for i in range(n):
-#     print(' '*i+'* '*(n-i))
-
-# *****
-#  ****
-#   ***
-#    **
-#     *
-# n=int(input ('enter row'))
-# for i in range(n):
-#     print(' '*i+'* '*(n-i))
-
-# * * * * * 
-#  * * * *
-#   * * *
-#    * *
-#     *
-
-# n=int(input ('enter row'))
-# for i in range(1,n+1):
-#     print(''*i+'*'*i)
-
-# for i in range(n-1,0,-1):
-#     print(' '*(n-i)+'* '*i) 
-
-#    * 
-#   * *
-#  * * *
-# * * * *
-#* * * * *
-# * * * *
-#  * * *
-#   * *
-#    *
-
-# n=int(input ('enter row'))
-# for i in range(1,n+1):
-#     print('* '*i)
-# for i in range(1,n+1):
-#     print(''*i+'* '*(n-i))
-
-#   * 
-#   * *
-#   * * *
-#   * * * *
-#   * * * * *
-#   * * * *
-#   * * *
-#   * *
-#   *  
-
-
-# n = int(input("Enter number of rows: "))
-# for i in range(1, n+1):
-#     # print spaces first, then stars
-#     print('  ' * (n - i) + '* ' * i)
-#     # Decreasing stars, right-aligneb
-# for i in range(n-1, 0, -1):
-#     print('  ' * (n - i) + '* ' * i)
-#        * 
-#      * *
-#    * * *
-#  * * * *
-#* * * * *
-#  * * * *
-#    * * *
-#      * *
-#        *
-# n=int(input ('enter row'))
-# for i in range(n):
-#     print('* '*(n-i))
-# # n=int(input ('enter row'))
-# for i in range(1,n+1):
-#     print('* '*i)
-#     * * * * *
-#     * * * *
-#     * * *
-#     * *
-#     *
-#     * *
-#     * * *
-#     * * * *
-#     * * * * *
-# n = int(input("Enter number of rows: "))
-# # Decreasing stars, right-aligned
-# for i in range(n, 0, -1):
-#     print('  ' * (n - i) + '* ' * i)
-# # Increasing stars, right-aligned
-# for i in range(2, n + 1):
-#     print('  ' * (n - i) + '* ' * i)
-#* * * * * 
-#  * * * *
-#    * * *
-#      * *
-#        *
-#      * *
-#    * * *
-#  * * * *
-#* * * * *
-# n=int(input('enter a num'))
-# for i in range(n):
-#     for j in ( i,n):
-#         print('',end=' ')
-#     for j in range(i+1):
-#         print('* ',end=' ')
-#     print()
-
-# n=int(input('enter a value'))
-# for i in range(n):#----------------i how much time it run--------------------
-#     for j in range(1,n+1):#------------------j print-------------------------
-#         print(j,end='')
-#     print()
-
-#1234
-#1234
-#1234
-#1234
-
-# n=int(input('enter a value'))
-# for i in range(1,n+1):
-#     for j in range(1,i+1):
-#         print(j,end=' ')
-#     print()
-
-#1
-#12
-#123
-#1234
-#12345
-
-# n=int(input('enter a value'))
-# for i in range(1,n+1):
-#     for j in range(1,i+1):
-#         print(j*2,end='')
-#     print()
-
-#2
-#24
-#246
-#2468
-#246810
-
-# n=int(input('enter a value'))
-# for i in range(1,n+1):
-#     for j in range(1,i+1):
-#         print(j*2-1,end=' ')
-#     print()
-
-#1
-#13
-#135
-#13579
-
-
-# n = 4   # number of rows
-# num = 1
-
-# for i in range(1, n+1):
-#     for j in range(i):
-#         print(num, end=" ")
-#         num += 1
-#     print()
-# 1
-# 2 3
-# 4 5 6
-# 7 8 9 10
-
-# n = 4   # number of rows
-# num = 1
-
-# for i in range(1, n+1):
-#     for j in range(i):    # j number of column
-#         print(num*2, end=" ")
-#         num += 1
-#     print()  
-#2 
-#4 6
-#8 10 12
-#14 16 18 20
-
-# n = 4
-# num = 1
-# for i in range(1, n+1):
-#     print(" "*(n-i), end="")   # left spaces
-#     for j in range(i):
-#         print(num, end=" ")
-#         num += 1
-#     print()
-#         1
-#        1  2
-#       1  2  3
-#      1  2  3  4
-#     1  2  3  4  5
-
-# n = 4
-# num = 1
-# for i in range(1, n+1):
-#     print(" "*(n-i), end="")   # left spaces
-#     for j in range(i):
-#         print(num*2, end=" ")
-#         num += 1
-#     print()
-#      2 
-#     4 6
-#   8 10 12
-# 14 16 18 20
-# x='A'
-# print(ord(x)+1)
-# print(chr(ord(x)+1))
-# print(chr(ord('A')+1))
-# n=input('enter a char')
-
-# n=int(input('enter a char'))
-# ch=(input('enter a char'))
-# for i in range(n):
-#     print(ch)
-#     ch=chr(ord(ch)+1)
-# print()
-# #a
-# #b
-# #c
-# #d
-# #e
-
-# n=int(input('enter a char'))
-# ch='a'
-# for i in range(n):
-#     for j in range(n):
-#         print(ch,end=' ')
-#     ch=chr(ord(ch)+1)
-#     print()  
-# #a a a a a 
-# #b b b b b
-# #c c c c c
-# #d d d d d
-# #e e e e e
-
-# n=int(input('enter a char'))
-#    ch='a' 
-# for i in range(1,n+1):
-   
-#     for j in range(i):
-#         print(ch,end=' ')
-#     ch=chr(ord(ch)+1)
-#     print()  
-
-#a 
-#b b
-#c c c
-#d d d d
-#e e e e e
-# n = int(input("enter a number: "))
-
-# for i in range(1, n+1):
-#     ch = 'A'           # start from A every row
-    
-#     for j in range(i):
-#         print(ch, end=' ')
-#         ch = chr(ord(ch) + 1)
-#     print()
-# #A 
-# #A B
-# #A B C
-# #A B C D
-# #A B C D E
-
-# n = int(input("enter a number: "))
-
-# for i in range(1, n+1):
-#     ch = 'A'           # start from A every row
-    
-#     for j in range(i):
-#         print(ch, end=' ')
-#         ch = chr(ord(ch) + 2)
-#     print()
-#A 
-#A C
-#A C E
-#A C E G
-#A C E G I
-# n = int(input("enter a number: "))
-# num='a'
-# for i in range(1, n+1):
-    
-#     for j in range(i):
-#         print(num, end=' ')
-#         num=chr(ord(num)+1)
-       
-#     print()
-
-#a 
-#b c
-#d e f
-#g h i j
-#k l m n o
-# n = int(input("enter a number: "))
-# num='a'
-# for i in range(1, n+1):
-#     print(" "*(n-i), end="")
-#     for j in range(i):
-#         print(num, end=' ')
-#         num=chr(ord(num)+1)
-       
-#     print()
-#    a 
-#   b c
-#  d e f
-# g h i j
-#k l m n o
-
-# n = int(input("enter a number: "))
-
-# for i in range(1, n+1):
-#     ch = 'A'           # start from A every row
-#     print(" "*(n-i), end="")
-#     for j in range(i):
-#         print(ch, end=' ')
-#         ch = chr(ord(ch) + 1)
-#     print()
-#      A 
-#     A B
-#    A B C
-#   A B C D
-#  A B C D 
-
-# n=5
-# i=1
-# while i<=n:
-#     j=1
-#     ch='a'
-#     while j<=i:
-#        print(ch,end='')
-#        ch=chr(ord(ch)+1)
-#        j=j+1
-#     i=i+1
-#     print( )
-# a
-# ab
-# abc
-# abcd
-# abcde
-
-# n=5
-# i=1
-# p='a'
-# while i<=n:
-#     j=1    
-#     while j<=i:       
-#        print(p,end='')
-#        p=chr(ord(p)+1)
-#        j=j+1     
-#     i=i+1
-#     print( )
-# a
-# bc
-# def
-# ghij
-# klmno
-# n=5
-# i=1
-# while i<=n:
-#     j=1
-#     ch='a'
-#     while j<=n:
-#        print(ch,end='')
-#        ch=chr(ord(ch)+1)
-#        j=j+1
-#     i=i+1
-#     print( )
-
-#  a a a a a 
-# #b b b b b
-# #c c c c c
-# #d d d d d
-# #e e e e e
-# n=int(input('enter a num'))
-# for _ in range(1,n+1):
-#     for i in range(1,n+1):
-#         print(i,end=' ')
-#     print()
-
-# n=int(input('enter a num'))
-# for _ in range(1,n+1):
-#     for i in range(1,_+1):
-#         print(i,end=' ')
-#     print()
-#--------------------------------even num triangle------------------------------------
-# n=int(input('enter a num'))
-# for _ in range(1,n+1):
-#     for i in range(1,_+1):
-#         print(i*2,end=' ')
-#     print()
-#--------------------------------odd num triangle------------------------------------
-# n=int(input('enter a num'))
-# for _ in range(1,n+1):
-#     for i in range(1,_+1):
-#         print(i*2-1,end=' ')
-#     print()
-
-# n=int(input('enter a num'))
-# y=1
-# for i in range(1,n+1):
-#    print(' '*(n-i),end=' ')
-#    for i in range(1,i+1):
-#         print(y,end=' ')
-#         y+=1
-#    print()
 #-------------------------------------transfer statment-----------------------------------------
 # n=int(input('enter a num'))
 # i=1
@@ -803,18 +365,18 @@
 #        continue
 #     else:
 #         print(i)
-        # i+=1
+#         i+=1
 
 # n=int(input('enter a num'))
 # i=1
 # while i<=n:
 #     if i==5:
 #        print('okk')
-#        break#-------------------after break teminet loop no execution after that---------
+#        break#-------after break teminet loop no execution after that---------
 #     else:
 #         print(i)
 #     i +=1
-#-------------------------------------------indentetion error space se ati hai ---------------------------------------------
+#indentetion error space se ati hai 
 #------------------------------------------------pass-----------------------------------------------------------------------------
 # print('hellow')
 # x=10
@@ -831,4 +393,180 @@
 #         print(i)
 #     i+=1
 
-#----------------------function (remove the reapetation of loop)----------------------------------------------
+
+
+# def print1_to_10():#-------------------------it give zero return turminet after 0------------------
+#         li=[]
+#         for i in range(11):
+#             li.append(i)
+#         return li
+# # num=int(input('enter a num'))
+# answer=print1_to_10 ()
+# print(answer)
+
+#--------------------------------------------------fibonachi------------------------------------------------------------------
+# fi=0
+# se=1
+# print(fi,se,end=" ")
+# n=int(input('enter a num'))
+# for i in range(n-2):
+
+#         next=fi+se
+#         fi=se
+#         se=next
+#         print(next)
+
+# n=int(input('enter a num'))
+# fi=0
+# se=1
+# for i in range(n):
+#         print(fi,end=' ')
+#         fi,se=se,fi+se
+#--------------------------------------prime num-------------------------------------------------------------------------
+
+# n=int(input('enter a num'))
+# count=0
+# for i in range(1,n+1):
+#         if n%i ==0:
+#                 count+=1#->store the value of divisible
+# if count==2:
+#         print('prime')
+# else:
+#         print('not prime')
+
+# i = 1 → divisible → count = 1
+
+# i = 2 → not divisible → count = 1
+
+# i = 3 → not divisible → count = 1
+
+# i = 4 → not divisible → count = 1
+
+# i = 5 → not divisible → count = 1
+
+# i = 6 → not divisible → count = 1
+
+# i = 7 → divisible → count = 2
+
+# Since count == 2 → prime ->prime divie 1and itself
+# num=7
+# ans=True
+# for i in range(2,num):
+#         if num%i==0:
+#                 print('not prime')
+#                 ans=False
+#                 break
+# if ans==True:
+#       print('prime')
+#------------------arrenge in dect format------------------------------------------------------------------
+# i/p :- l = [1, 1, 1, 2, 3, 4, 3, 4, 2, 5, 6, 5, 7]
+# o/p :- {1: 3, 2: 2, 3: 2, 4: 2, 5: 2, 6: 1, 7: 1}
+# l=[1,1,1,2,3,4,3,5,5,9,9,]
+# output_dict={}
+# for i in l:
+#         if i in output_dict:
+#                 output_dict[i]+=1
+#         else:
+#                 output_dict[i]=1
+# print(output_dict)
+
+# i/p :- [2,0,3,0,1,0,5]
+# o/p :- [2,3,1,5,0,0,0]
+# l = [2,0,3,0,1,0,5] 
+# l1=[]
+# for i in l:
+#    if i !=0:
+#       l1.append(i)
+# zero_count = l.count(0)
+# for _ in range(zero_count):
+#     l1.append(0)    
+# print(l1)
+
+
+# l = [2,0,3,0,1,0,5] 
+# l1=[]
+# for i in l:
+#    if i !=0:
+#       l1.append(i)
+# n=len(l)-len(l1)
+# for _ in range(n):
+#     l1.append(0)    
+# print(l1)
+
+# i/p :- [2,1,3,8,4,8,5]
+# o/p :- [2,8,4,8,1,3,5]
+# l=[2,1,3,8,4,8,5]
+# l1=[]
+# for i in l:
+#    if i%2==0:
+#       l1.append(i)
+# for i in l:
+#    if i%2!=0:
+#       l1.append(i)
+
+# print(l1)
+#----------------------------- WAP to check given number is either perfect number or not.----------------------------------------------------------
+# n=int(input("Enter any no:"))
+# sum = 0
+# for i in range(1,n):
+#    if n%i==0:
+#         sum=sum+i
+#         if i<n:
+#           print((i),end='+')
+#         else:
+#             print((i),end='=')
+# print (sum)
+# if n==sum:
+#     print(f'given number {n} is perfect number')
+# else:
+#      print(f'given number {n} is not a perfect number')
+#-----------------------------------------------------max num in list--------------------------------------------
+# l = [2,4,9,3,5]
+# max = l[0]
+# for i in l:
+#         if i>max:
+#             max=i 
+# print('max value:',max)
+# #-----------------------------------------------------min num in list--------------------------------------------
+# l = [2,4,9,3,5]
+# min = l[0]
+# for i in l:
+#         if i<min:
+#             min=i
+# print('max value:',min)
+
+#--------------------------------asending order-------------------------------------------------------------
+# l = [64, 34, 25, 12, 22, 11, 90, 5]
+# l.sort()
+# print(l)
+# l = [64, 34, 25, 12, 22, 11, 90, 5]
+# for i in range(len(l)):
+#     for j in range(len(l)-1-i):#l[j] → current element at index j,l[j+1] → next element at index j+1
+#         if l[j] > l[j+1]:  #Compare l[0]=64 and l[1]=34→ 64> 34 → swap
+#             l[j], l[j+1] = l[j+1], l[j]
+# print("Ascending:", l)
+
+# range(len(l)-1-i) = range(8-1-0) = range(7)
+# So j will take values: 0, 1, 2, 3, 4, 5, 6
+
+# Inner loop compares l[j] and l[j+1]
+
+# First comparison
+# j = 0
+
+# l[j] = l[0] = 64 
+
+# l[j+1] = l[1] = 34
+
+# Condition: if l[j] > l[j+1] → if 64 > 34 → True → swap
+#------------------------------------desending order--------------------------------------------------------------
+# l = [64, 34, 25, 12, 22, 11, 90, 5]
+# l.sort(reverse=True)
+# print(l)
+
+# l = [64, 34, 25, 12, 22, 11, 90, 5]
+# for i in range(len(l)):
+#     for j in range(len(l)-1-i):
+#         if l[j] <l[j+1]:  
+#             l[j], l[j+1] = l[j+1], l[j]
+# print("Ascending:", l)
