@@ -140,6 +140,19 @@ def natural_num(n):
 n=int(input('enter a num'))
 res=natural_num(n)
 print(res)
+def natural_num(n):
+    count=0
+    for i in range(1,n+1):
+        if n % i==0:
+            count+=1
+    if count > 2:
+        return ' Not prime'
+    else:
+        return 'prime'
+           
+n=int(input('enter a num'))
+res=natural_num(n)
+print(res)
 
 
 
