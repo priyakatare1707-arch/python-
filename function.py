@@ -127,33 +127,98 @@
 # n=int(input('enter a num'))
 # natural_num(n)
 
-def natural_num(n):
-    count=0
-    for i in range(1,n+1):
-        if n % i==0:
-            count+=1
-    if count > 2:
-        return ' Not prime'
-    else:
-        return 'prime'
-           
-n=int(input('enter a num'))
-res=natural_num(n)
-print(res)
-def natural_num(n):
-    count=0
-    for i in range(1,n+1):
-        if n % i==0:
-            count+=1
-    if count > 2:
-        return ' Not prime'
-    else:
-        return 'prime'
-           
-n=int(input('enter a num'))
-res=natural_num(n)
-print(res)
+# def natural_num(n):
+#     count=0
+#     for i in range(1,n+1):
+#         if n % i==0:
+#             count+=1
+#     if count > 2:
+#         return ' Not prime'
+#     else:
+#         return 'prime'
 
+# while (true):
+#     print('1.add/n','2.sub/n','3.div/n','4.mul/n','5.Exit')
+#     n=int(input('please enter a abave value'))
+#     if n in (1,2,3,4,5):
+#         if n in (1,2,3,4):
+#             if n == 1:
+#                 nummber=int(input('how many number you want to add:'))
 
+#                 l=[]
+#                 for i in range(1,n+1):
+#                    value= int(input(f'enter{i}number'))
+#                    l.append(value)
+#                 sum=0
+#                 for i in l:
+#                    sum+=i
+#                 print (f'addition of {l}is {sum}')
+#         else:
+#             brack
+#     else:
+    #-------------------------------who have no name anonemas(lambda function)--------------------------------------
+#  use only for loop never while loop
+# x=lambda x,y,z:2*x+y+z
 
+# print(x(1,2,3))
+#syntex
+# lambda x,y :if result if condition else else_result
 
+# x=lambda x,y :x if x>y else y
+# print(x(5,10))
+#------------------------------------------age condition---------------------------------------------------------
+# x=lambda age:'child' if 0<age<18 else ('adult' if 18<age<60 else ('senier' if 59<age else 'invelide age'))
+# age=int(input('enter age'))
+# print(x(age))
+ #-------------------------------------------even---------------------------------------------------   
+# x=lambda n: 'even' if n%2==0 else None# not use pass bcause it use for block work
+# n=int(input('enter a num'))
+# print(x(n))
+#---------------------------------------square---------------------------------------------------
+# x=lambda n: n**2
+# n=int(input('enter a num'))
+# print(x(n))
+
+#---------------------------------------squar root-----------------------------------------------
+# x=lambda n: n**0.5
+# n=int(input('enter a num'))
+# print(x(n))
+#------------------------------collection of natural num--------------------------------------------
+#output-->i
+# n=10
+# x=lambda n : [i for i in range(1,n+1)]
+# print(x(n))
+#----------------------------list of even---------------------------------------------------------------
+# n=10
+# x=lambda n : [i for i in range(1,n+1) if i%2==0]
+# print(x(n))
+#------------------------------------(map with lambda)------------------------------------------------------
+# l=[1,2,3,4,5]
+# print(list(map(lambda n: n**2,l)))#---------------(l itrable)---------------------
+
+# l1=[1,2,3,4,5]
+# l2=[6,7,8,9,10]
+# l3=[11,12,13,14,15]
+# print(list(map(lambda x,y,z : x+y+z ,l1,l2,l3)))
+
+# l1=[1,2,3,4,5]
+# l2=[6,7,8,9,10]
+# l3=[11,12,13,14,15]
+# print(list(map(lambda x,y,z : x-y-z ,l1,l2,l3)))
+
+# l1=[1,2,3,4,5]
+# l2=[6,7,8,9,10]
+# l3=[11,12,13,14,15]
+# print(list(map(lambda x,y,z : x*y*z ,l1,l2,l3)))
+#---------------------squar root sum----------------------------------------
+# l1=[1,2,3,4,5]
+# l2=[6,7,8,9,10]
+# l3=[11,12,13,14,15]
+# print(list(map(lambda x,y,z : x**0.5+y**0.5+z**0.5 ,l1,l2,l3)))
+#-----------------------------even by filter---------------------------
+# l1=[1,2,3,4,5]
+# print(list(filter(lambda x : x if x%2==0 else None,l1)))
+#-----------------------------------sum by reduse------------------------------------------------
+# import functools
+# l1=[1,2,3,4,5]
+# print((functools.reduce(lambda x,y : x+y,l1 )))#we didnot use list bcz it return single value
