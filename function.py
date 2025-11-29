@@ -222,3 +222,124 @@
 # import functools
 # l1=[1,2,3,4,5]
 # print((functools.reduce(lambda x,y : x+y,l1 )))#we didnot use list bcz it return single value
+
+# def decore (fun):
+#     def inner():
+#         fun()
+#     return inner
+# def add():
+#     print('hellow')
+# res = decore(add)
+# print(res)
+# res()
+
+# def decore (fun):
+#     def inner(p,q):#p=10,q=20
+#         p=p+5       #p=15,q=40
+#         q=q*2
+#         fun(p,q)
+#     return inner
+# def add(x,y):  #x=15,y=40
+#     print(x+y) #55
+# res = decore(add)
+# print(res)
+# res(10,20)
+#-----------------------------------------decoretor( without changing theinternal function  modify code )-------------------------
+# def decore (fun):
+#     def inner(p,q):#p=10,q=20
+#         p=p+5       #p=15,q=40
+#         q=q*2
+#         fun(p,q)
+#     return inner
+# @decore  # xand y ki value pass kar rha hai fun me
+# def add(x,y):  #x=15,y=40
+#     print(x+y) #55
+
+# add(10,20)
+
+# def first(fun): #--------------------------give welcome-----------------------------------
+#     def inner():
+#         print('welcome')
+#     return inner
+# @ first 
+# def great():  
+#     print('hellow') 
+# great()
+# -----------------------------even by def-------------------------------------------------
+# n=10
+# def even(n):
+#     for i in range(1,n+1):
+#         print(2*i)
+# even(n)
+
+#-------------------------------------even return odd-----------------------------------------
+# def decore(fun):
+#     def inner(x):
+#         for i in range(1,x+1):
+#              print(2*i-1)
+#     return inner
+
+# @ decore
+# def even(n):
+#     for i in range(1,n+1):
+#         print(2*i)
+# n=int(input('enter a num'))
+# even(n)
+
+# def decore(fun):
+#     def inner(x,y):
+#         print(x-y)
+#     return inner
+
+# @ decore
+# def even(x,y):
+    
+#         print(x+y)
+# x=int(input('enter a num'))
+# y=int(input('enter a num'))
+# even(x,y)
+
+# def decore(fun):
+#     def inner(x,y):
+#         print(x+y)
+#     return inner
+
+# @ decore
+# def even(x,y):
+    
+#         print(x-y)
+# x=int(input('enter a num'))
+# y=int(input('enter a num'))
+# even(x,y)
+
+#-------------------------use return--------------------------------------------------------
+# def decore(fun):
+#     def inner(x,y):
+#         return(x+y)
+#     return inner
+
+# @ decore
+# def even(x,y):
+    
+#         return(x-y)
+# x=int(input('enter a num'))
+# y=int(input('enter a num'))
+# print(even(x,y))
+
+
+
+def decore(fun):
+    def inner(x,y):#x=10 y=50 div 0.sumthing it give 0 remove decial value
+        print(x//y)#---
+    return inner
+
+@ decore
+def even(x,y):
+    
+        print(x*y)
+x=int(input('enter a num'))
+y=int(input('enter a num'))
+even(x,y)
+
+#add -->sub
+#mul-->div
