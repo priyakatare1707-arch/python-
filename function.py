@@ -328,18 +328,70 @@
 
 
 
-def decore(fun):
-    def inner(x,y):#x=10 y=50 div 0.sumthing it give 0 remove decial value
-        print(x//y)#---
-    return inner
+# def decore(fun):
+#     def inner(x,y):#x=10 y=50 div 0.sumthing it give 0 remove decial value
+#         print(x//y)#---
+#     return inner
 
-@ decore
-def even(x,y):
+# @ decore
+# def even(x,y):
     
-        print(x*y)
-x=int(input('enter a num'))
-y=int(input('enter a num'))
-even(x,y)
+#         print(x*y)
+# x=int(input('enter a num'))
+# y=int(input('enter a num'))
+# even(x,y)
 
 #add -->sub
 #mul-->div
+#---------------------------------------------opps-----------------------------------------------------------------------------
+# class stud:
+#     x=10
+#     y=20
+# obj=stud#--------------->internal constructor
+# obj1=stud()#--------------->external constructor(initial informetion-->constructor)
+# print(id(obj),id(obj1))
+# #-------------------------------------(constructor)special tyoe if method that we dosent want to call(we can call extarnal)
+# #how many constractor you made in class--->n number
+# class stud:
+#     def__init__(self):#----that can hold current class ka current object
+#         print('constructor calls')
+#         print(id(self))
+#     def__init__(self):#----that can hold current object information
+#         print('hellow')
+# obj=stud#--------------->internal constructor
+# obj1=stud()#--------------->external constructor(initial informetion-->constructor)
+# print(id(obj))
+# obj1__init__()
+
+
+
+
+# class stud:
+#     school = 'hss'
+#     school_city = 'bhopal'
+
+#     def detail(self):
+#         print('from stud class')
+
+# obj = stud()
+# print(obj.school, stud.school)
+# print(obj.school, stud.school_city)
+# obj.detail()
+# --------------------------------------------jiska parameter self hai vo instine method hai
+
+# class stud:
+#     def __init__(self,name,age,grad):
+#         self_n=name
+#         self_a=age
+#         self_g=grad
+# obj = stud('priya',23,'b.tech')
+
+# class stud:
+#     def __init__(self,name,age,grad):
+#         self.n=name
+#         self.a=age
+#         self.g=grad
+#     def display(self):
+#         print(self.n,self.a,self.g)
+# obj = stud('priya',23,'b.tech')
+# obj.display()
