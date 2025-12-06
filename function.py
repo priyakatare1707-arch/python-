@@ -395,3 +395,113 @@
 #         print(self.n,self.a,self.g)
 # obj = stud('priya',23,'b.tech')
 # obj.display()
+#
+#-------------------------------------------------variable-------------------------------------------------------------
+# instance variable-->object dependent veriable(if changing object change variable)
+#decaleration
+#--------------------inside class
+# 1.inside conductor
+# 2.inside instance method
+#outside class
+#calling
+#-------------------inside class
+# 1.inside conductor
+# 2.inside instance method
+#outside class
+
+
+
+# class stud:
+#     def __init__(self,name,contact):
+#         self.n=name  
+#         self.c=contact #     decaleration
+#         print(self.n,self.c)# calling inside constructor
+#     def add_new(self,roll_no):
+#         self.r=roll_no  #  decaleration
+#     def display (self):  #  calling inside instance method
+#         print(self.c,self.n,self.r,self.email)
+# obj=stud('priya',123)
+# obj.add_new(101)  # declearection inside instance method
+# obj.email='priya@gmail.com'  #  declearection outside of class
+# obj.display()
+# print(obj.c,obj.n,obj.r,obj.email)  # calling outside of class                     
+# #class variable-->object dependent class(object notdepending on  veriable)
+# #--------------------------------------- instance of class is called object
+# print(obj.n)
+# obj2=stud('rahul',145)
+# print(obj2)
+#oops,class,localvariable,
+# instence method
+
+#------------------------------------class method-----------------------------------------------------------------------------------
+
+# class stud:
+#     grad='10th'
+#     def __init__(self,name,roll_no):
+#         self.n=name
+#         self.r=roll_no
+#     @classmethod
+#     def update(cls,new):
+#         cls.grad=new
+# obj1=stud('priya',1234)
+# print(stud().grad)
+# obj1update('11th')
+# print(stud.grad)
+
+# class stud:
+#     grad='10th'
+#     def __init__(self,name,roll_no):
+#         self.n=name
+#         self.r=roll_no
+#     @classmethod             #------------------update-------------------------------------
+#     def update(cls,new):
+#         cls.grad=new
+#     @classmethod
+#     def add_new(cls,add):
+#         cls.code=add
+# obj=stud('priya',1234)
+
+# obj.add_new(123)
+# print(stud.code)
+#-------------------------------------------------static method---------------------------------------------------------------
+# class stud:
+#     def __init__(self,roll_no):
+#         self.n=roll_no
+#     @staticmethod
+#     def greet(name):
+#         print(f'welcome{name} to my web page')
+
+# obj=stud('priya')
+# x=obj.n 
+# obj.greet(x)
+# class object self variable method
+
+# properties:-
+# :for data protection
+# adstraction
+# incapsulation
+# :for code reuseable
+# inheritance
+# polymorphism
+
+# :in abstraction
+# 1.abstract class
+# 2.abstract method
+# 3.concret method
+
+# :encapsulation->access specifier/method(it is not supported in python)
+# 1.public
+# 2.protected
+# 3.private
+
+# :inheritance
+# 1.type
+# 2.method overritding
+# 3.mro
+# 4.super()
+
+# :polymorphism
+# 1.type
+# ->compile time
+# ->rantime
+# 2.overload
