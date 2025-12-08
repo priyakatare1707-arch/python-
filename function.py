@@ -377,7 +377,7 @@
 # print(obj.school, stud.school)
 # print(obj.school, stud.school_city)
 # obj.detail()
-# --------------------------------------------jiska parameter self hai vo instine method hai
+# --------------------------------------------jiska parameter self hai vo instance method hai
 
 # class stud:
 #     def __init__(self,name,age,grad):
@@ -505,3 +505,87 @@
 # ->compile time
 # ->rantime
 # 2.overload
+
+#------------------------------------------inheritance(child direct excess parent proparty)
+# class parent:
+#     x=10
+#     def home(self):
+#         print('from your parent class')
+# class child(parent):
+#     pass
+# obj=child()
+# print(obj.x)
+# obj.home()
+
+# --------------------type:-
+# 1.single_level
+# parent
+#     |
+# # child
+# # 2.multiple_level
+# # grantparent
+#      |
+# # parent
+#      |
+# # child
+# # 3.multiple
+# # parent1,parent2
+#     |
+# # child
+# # 4.hierachical
+# # parent
+#      |
+# # child1,child2
+#hybrid
+#  parent
+#      |
+# # child1,child2
+#        |
+# #subchild
+
+# 1.single_level
+
+# class parent:          #method overriding
+#     x=10
+#     def home(self):
+#         print('from your parent class')
+# class child(parent):
+#     def home(self):
+#         print('from your parent class')
+#         super().home()
+# obj= child()
+# obj.home()
+# child se parent ki property udhana and class same ho to super() method use karte hai
+
+# 2.multiple_level
+# class grandparent:          #method overriding
+#     x=10
+#     def home(self):
+#         print(' home from grand parent')
+# class parent(grandparent):
+#     def home(self):
+#         print(' call from  parent class')
+#         super().home()
+# class child(parent):
+#     def home(self):
+#         print('home from child')
+        # super().home()
+# obj= child()
+# obj.home()   
+
+#  3.multiple
+class father:          #method overriding
+    x=10
+    def home(self):
+        print(' home from father')
+        mother.home(self)
+class mother:          #method overriding
+    def home(self):
+        print(' home from mother')
+class child(father,mother):    #mro->method resolution object      
+    x=10
+    def home(self):
+        print(' home from child')
+        super().home()
+obj= child()
+obj.home()   
