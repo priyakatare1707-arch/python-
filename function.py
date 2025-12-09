@@ -574,18 +574,61 @@
 # obj.home()   
 
 #  3.multiple
-class father:          #method overriding
-    x=10
-    def home(self):
-        print(' home from father')
-        mother.home(self)
-class mother:          #method overriding
-    def home(self):
-        print(' home from mother')
-class child(father,mother):    #mro->method resolution object      
-    x=10
-    def home(self):
-        print(' home from child')
-        super().home()
-obj= child()
-obj.home()   
+# class father:          #method overriding
+#     x=10
+#     def home(self):
+#         print(' home from father')
+#         mother.home(self)
+# class mother:          #method overriding
+#     def home(self):
+#         print(' home from mother')
+# class child(father,mother):    #mro->method resolution object      
+#     x=10
+#     def home(self):
+#         print(' home from child')
+#         super().home()
+# obj= child()
+# obj.home()   
+
+# hybrid-inheritance(having multiple child->)
+# class a:
+#     def home(self):
+#         print('from class a')
+        
+# class b(a):
+#     def home(self):
+#         print('from class b')
+#         c.home(self)
+# class c(a):
+#     def home(self):
+#         print('from class c')
+#         super().home()
+# class d(b,c):
+#     pass
+# obj= d()
+# obj.home() 
+
+# -----------------------------------------------abstrection(protecting data the data)--------------------------------------------
+# abstract class
+# abstract method
+# concrete method
+# from abc import ABC , abstractmethod
+# class A(ABC):
+#     def desboard(self):
+#         print('welcome to desboard')
+#     @abstractmethod
+#     def login (self):
+#         pass
+# class B(A):
+#     def login(self):
+#         print('login successfully')
+# obj=B()
+# obj.desboard()
+# obj.login()
+#protect perent class with inheritance
+
+# class hold variable and method 
+#------------------------------------------------incapsulation----------------------------------------------------------------
+#to wrap variable and methoid in single unit is incapsulation
+#   access specification/modifier(it is in opps consept but not in python)
+#public-->(x,add())access in inside outside and child class
