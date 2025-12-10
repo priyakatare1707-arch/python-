@@ -571,9 +571,9 @@
 #             l[j], l[j+1] = l[j+1], l[j]
 # print("Ascending:", l)
 # -----------------------------------------------new topic----------------------------------------- 
-l = [64, 34, 25, 12, 22, 11, 90, 5]
-for i in range(len(l)):
-    for j in range(len(l)-1-i):
-        if l[j] <l[j+1]:  
-            l[j], l[j+1] = l[j+1], l[j]
-print("Ascending:", l)
+# l = [64, 34, 25, 12, 22, 11, 90, 5]
+# for i in range(len(l)):
+#     for j in range(len(l)-1-i):
+#         if l[j] <l[j+1]:  
+#             l[j], l[j+1] = l[j+1], l[j]
+# print("Ascending:", l)

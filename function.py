@@ -551,7 +551,7 @@
 #         print('from your parent class')
 # class child(parent):
 #     def home(self):
-#         print('from your parent class')
+#         print('from your child class')
 #         super().home()
 # obj= child()
 # obj.home()
@@ -632,3 +632,105 @@
 #to wrap variable and methoid in single unit is incapsulation
 #   access specification/modifier(it is in opps consept but not in python)
 #public-->(x,add())access in inside outside and child class
+
+
+#-----------------------------------publice variable and method( vaeiable use inside class, outsideclass and child class)---------------------------------------------------
+# class a:
+#     x=10
+#     def show (self):
+#         print("from class a")
+#         # print(a.x)
+# class b(a):
+#     pass
+# obj=b()
+# print(obj.x)
+# obj.show()
+# print(a.x)
+# print(a.show(10))
+
+#----------------------------------------protected variable not python supported(accessable only child class not ouside)----------------------------------------------------
+# class a:
+#     x=10
+#     def _show (self):
+#         print("from class a")
+#         # print(a._x)
+# class b(a):
+#     pass
+# obj=b()
+# print(obj._x)
+# obj._show()
+# print(a._x)
+# print(a._show(10))
+#-----------------------private--------------------------------------------
+class a:
+    x=10
+    def __show (self):
+        print("from class a")
+        # print(a.__x)
+class b(a):
+    pass
+obj=b()
+print(obj.__x)
+obj.__show()
+print(a.__x)
+print(a.__show(10))
+
+# class a:
+#     x=10
+#     def __show (self):
+#         print("from class a")
+#         print(a.__x)
+# class b(a):
+#     pass
+# obj=b()
+# print(dir(a))
+# # print (obj._a__x)
+
+# ['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__firstlineno__', '__format__',
+#  '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', 
+#  '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__',
+#   '__static_attributes__', '__str__', '__subclasshook__', '__weakref__', '_a__show', 'x']
+# name megling-->name ko change kare dusare name store karne
+class a:
+    __x=10
+    def __show (self):
+        print("from class a")
+        print(a.__x)
+class b(a):
+    pass
+obj=b()
+print(dir(a))
+# print (obj._a__x)
+
+
+
+# mro method resolution object who came fist
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#  constructor it call outometicaly by making object
+# current becouse over load bysame constructor
+# ild value lekar bahar nikal jata hai not terminet 
+# return terminet withb data
+# self current object ki identity hold karta hai
