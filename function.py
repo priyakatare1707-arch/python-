@@ -350,7 +350,7 @@
 # obj=stud#--------------->internal constructor
 # obj1=stud()#--------------->external constructor(initial informetion-->constructor)
 # print(id(obj),id(obj1))
-# #-------------------------------------(constructor)special tyoe if method that we dosent want to call(we can call extarnal)
+# #-------------------------------------(constructor)special type if method that we dosent want to call(we can call extarnal)
 # #how many constractor you made in class--->n number
 # class stud:
 #     def__init__(self):#----that can hold current class ka current object
@@ -391,11 +391,11 @@
 #         self.n=name
 #         self.a=age
 #         self.g=grad
-#     def display(self):
+#     def display(self):-->instace method
 #         print(self.n,self.a,self.g)
 # obj = stud('priya',23,'b.tech')
 # obj.display()
-#
+
 #-------------------------------------------------variable-------------------------------------------------------------
 # instance variable-->object dependent veriable(if changing object change variable)
 #decaleration
@@ -434,7 +434,9 @@
 # instence method
 
 #------------------------------------class method-----------------------------------------------------------------------------------
+# First parameter is cls (refers to class itself)
 
+# Can access class variables only
 # class stud:
 #     grad='10th'
 #     def __init__(self,name,roll_no):
@@ -634,7 +636,7 @@
 #public-->(x,add())access in inside outside and child class
 
 
-#-----------------------------------publice variable and method( vaeiable use inside class, outsideclass and child class)---------------------------------------------------
+#-----------------------------------publice variable and method( variable use inside class, outsideclass and child class)---------------------------------------------------
 # class a:
 #     x=10
 #     def show (self):
@@ -644,36 +646,44 @@
 #     pass
 # obj=b()
 # print(obj.x)
-# obj.show()
+# obj.show()#bound method where self is automatically set to obj.
 # print(a.x)
-# print(a.show(10))
+# print(a.show(10))#none->It does not have a return statement.
 
+# Type	                     Naming	Access      from outside class	    Access from subclass	   Example
+# Public	                        x	                  ✅ Yes                 	✅ Yes	         x = 10
+# Protected	                    _x	            ⚠️ By convention: yes,          ✅ Yes	          _x = 10
+#                                                       but discouraged	
+# Private	                        __x	                 ❌ Not directly	     ❌ Not directly          __x = 10
+#                                                                             (name-mangled)	
 #----------------------------------------protected variable not python supported(accessable only child class not ouside)----------------------------------------------------
 # class a:
-#     x=10
+#     _x=10
 #     def _show (self):
 #         print("from class a")
-#         # print(a._x)
+#         print(a._x)
 # class b(a):
 #     pass
 # obj=b()
-# print(obj._x)
-# obj._show()
-# print(a._x)
-# print(a._show(10))
+# print(obj._x)->10
+# obj._show()->from class a and 10
+# print(a._x)->10
+# print(a._show(10))->from class a
+# 10
+# None
 #-----------------------private--------------------------------------------
-class a:
-    x=10
-    def __show (self):
-        print("from class a")
-        # print(a.__x)
-class b(a):
-    pass
-obj=b()
-print(obj.__x)
-obj.__show()
-print(a.__x)
-print(a.__show(10))
+# class a:
+#     x=10
+#     def __show (self):
+#         print("from class a")
+#         # print(a.__x)
+# class b(a):
+#     pass
+# obj=b()
+# print(obj.__x) #error
+# obj.__show() #error
+# print(a.__x) #error
+# print(a.__show(10)) #error
 
 # class a:
 #     x=10
@@ -690,47 +700,48 @@ print(a.__show(10))
 #  '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', 
 #  '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__',
 #   '__static_attributes__', '__str__', '__subclasshook__', '__weakref__', '_a__show', 'x']
-# name megling-->name ko change kare dusare name store karne
-class a:
-    __x=10
-    def __show (self):
-        print("from class a")
-        print(a.__x)
-class b(a):
-    pass
-obj=b()
-print(dir(a))
+
+#-------------------------------------- name megling-->name ko change kare dusare name store karne-------------------------------
+
+# class a:
+#     __x=10
+#     def __show (self):
+#         print("from class a")
+#         print(a.__x)
+# class b(a):
+#     pass
+# obj=b()
+# print(dir(a))
 # print (obj._a__x)
 
 
 
 # mro method resolution object who came fist
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #  constructor it call outometicaly by making object
-# current becouse over load bysame constructor
+# current becouse over load by same constructor
 # ild value lekar bahar nikal jata hai not terminet 
-# return terminet withb data
+# return terminet with b data
 # self current object ki identity hold karta hai
+#-----------------------method polimorfism(run time)----------------------------
+
+# class a:
+#     def  sound(self):
+#         print('animal sound')
+
+# class b:
+#     def  sound(self):
+#          print('human sound')
+# l=[a(),b()]
+# for i in l:
+#     i.sound()
+# #-------------------------------------function  polimorfism(run time)
+# s='python'
+# print(len(s))
+
+# s=['python']
+# print(len(s))
+# #-----------------------------------------oprator polimorfism(run time)
+# x=10
+# y=12
+# z=1
+# print(z)
