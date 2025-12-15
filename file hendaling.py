@@ -62,8 +62,8 @@
 # print(f.encoding)
 # print(f.closed)
 
-f=open('g3.txt','w+')#read mode
-print(f.tell())
+# f=open('g3.txt','w+')#read mode
+# print(f.tell())
 # print(f.name)
 # print(f.mode)
 # print(f.readable())
@@ -130,19 +130,31 @@ print(f.tell())
 # where:0->starting position
 #     1->current position
 #     2->last position
-f=open('x1.txt','rb+')
-# print(f.tell())
-# data=f.read(10)#0
-# print(data)
-# print(f.tell())
-# f.seek(-5,1)
-# print(f.tell())
-# f.read(10)
-# print(f.tell())
-data=f.read(25)
-f.seek(20)
-print(f.tell())#20
-f.seek(-1,1)
-print(f.tell())#20-19position
-f.seek(-5,2)
-print(f.tell())#37position
+# f=open('x1.txt','rb+')
+# # print(f.tell())
+# # data=f.read(10)#0
+# # print(data)
+# # print(f.tell())
+# # f.seek(-5,1)
+# # print(f.tell())
+# # f.read(10)
+# # print(f.tell())
+# data=f.read(25)
+# f.seek(20)
+# print(f.tell())#20
+# f.seek(-1,1)
+# print(f.tell())#20-19position
+# f.seek(-5,2)
+# print(f.tell())#37position
+class a():
+    def __init__(self,radius):
+        self.radius=radius
+    def area(self):
+        return 3.14*self.radius*self.radius
+    def ci(self):
+        return 2*3.14*self.radius
+a1=a(5)
+print(a1.area())
+print(a1.ci())
+
+
