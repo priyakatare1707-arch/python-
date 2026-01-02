@@ -70,6 +70,31 @@
 # else:
 #     print('not palindrom')
 
+# n=int(input ('enter row'))
+# temp=n
+# v=0
+# while n>0:
+#     p=n%10
+#     v=v*10+p
+#     n=n//10
+# if temp == v:
+#     print('palindrom')
+# else:
+#     print('not palindrom')
+
+# n = input("Enter number: ")
+
+# rev = ""           # to store reverse
+
+# for ch in n:
+#     rev = ch + rev   # add character in front (reverse build)
+
+# if n == rev:
+#     print("palindrome")
+# else:
+#     print("not palindrome")
+
+
 #------------------------------------------loop to avoid repeatetion of same block------------------------------------------------
 
 # syntex ->for i in iterable
@@ -134,7 +159,7 @@
 #       print('c',c) 
 # else:
 
-#       print('please inter alphabet')
+    #   print('please inter alphabet')
 
 #-------------------------------for n natural number-----------------------
 
@@ -160,7 +185,7 @@
 
 #       sum=sum+i
 #       if i<n:
-#             print(i,end=' ,')
+#             print(i,end=' +')
 
 #       else:
 #             print(i,end=' =')
@@ -169,7 +194,7 @@
 # n=int(input('enter value'))
 # for i in range(1,n+1):
 #   print(i*2)
-# #-----------------------two ka tabble in horizontal--------------------------------------------------------
+# #-----------------------two ka tabble in horizontal(even num)--------------------------------------------------------
 # n=int(input('enter value'))
 # for i in range(1,n+1):
 #     if i<n:
@@ -199,9 +224,9 @@
 #       else:
 #             print((i*2-1),end='=')
 # print(sum)
-
-
-
+# n=int(input('enter value'))
+# for i in range(1,n+1):
+#   print(i*2-1)
 # #-------------------------------------------even sum in range--------------------------------------------
 # n=int(input('enter value'))#------there is a problem if i give odd it didnot give (=)--------------
 # sum=0
@@ -461,14 +486,14 @@
 #------------------arrenge in dect format------------------------------------------------------------------
 # i/p :- l = [1, 1, 1, 2, 3, 4, 3, 4, 2, 5, 6, 5, 7]
 # o/p :- {1: 3, 2: 2, 3: 2, 4: 2, 5: 2, 6: 1, 7: 1}
-# l=[1,1,1,2,3,4,3,5,5,9,9,]
-# output_dict={}
-# for i in l:
-#         if i in output_dict:
-#                 output_dict[i]+=1
-#         else:
-#                 output_dict[i]=1
-# print(output_dict)
+l=[1,1,1,2,3,4,3,5,5,9,9,]
+output_dict={}
+for i in l:
+        if i in output_dict:
+                output_dict[i]+=1
+        else:
+                output_dict[i]=1
+print(output_dict)
 
 # i/p :- [2,0,3,0,1,0,5]
 # o/p :- [2,3,1,5,0,0,0]
